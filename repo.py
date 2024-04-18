@@ -1,8 +1,8 @@
-from langchain_anthropic import ChatAnthropic
+from langchain_anthropic import ChatOpenAi
 from crewai import Crew, Process, Agent
 from dotenv import load_dotenv
 import os
-os.environ["ANTHROPIC_API_KEY"] ="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"
+os.environ["OPENAI_API_KEY"] ="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"
 
 Nutritionist = Agent(
     role='Nutritionist',
@@ -11,7 +11,7 @@ Nutritionist = Agent(
     verbose=False,
     allow_delegation=True,
     max_rpm=5,
-    llm=ChatAnthropic(model="claude-3-sonnet-20240229", max_tokens=4069)
+    llm=ChatOpenAi(model="gpt-4-turbo", max_tokens=4069)
 )
 
 
