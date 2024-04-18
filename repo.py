@@ -1,4 +1,4 @@
-from langchain_anthropic import ChatOpenAi
+from langchain_openai import ChatOpenAi
 from crewai import Crew, Process, Agent
 from dotenv import load_dotenv
 import os
