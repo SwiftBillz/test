@@ -38,7 +38,7 @@ from crewai import Crew, Process, Agent
 project_crew = Crew(
     tasks=[diet_task], # Tasks that that manager will figure out how to complete
     agents=[Nutritionist], # Agents that will be assigned to complete the tasks
-    manager_llm=ChatAnthropic(temperature=1, model="claude-3-sonnet-20240229", max_tokens=4069 ), # The manager's LLM that will be used internally
+    manager_llm=ChatOpenAI(temperature=1, model="gpt-4-turbo", max_tokens=4069 ), # The manager's LLM that will be used internally
     max_rpm=4,  # The maximum RPM for the project
     process=Process.hierarchical  # Designating the hierarchical approach
 )
