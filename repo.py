@@ -11,7 +11,7 @@ Nutritionist = Agent(
     verbose=False,
     allow_delegation=True,
     max_rpm=5,
-    llm=ChatOpenAi(model="gpt-4-turbo", max_tokens=4069)
+    llm=ChatOpenAI(model="gpt-4-turbo", max_tokens=4069)
 )
 
 
