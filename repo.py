@@ -2,7 +2,7 @@ from langchain_openai import ChatOpenAI
 from crewai import Crew, Process, Agent
 from dotenv import load_dotenv
 import os
-os.environ["OPENAI_API_KEY"] ="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"
+os.environ["OPENAI_API_KEY"] ="sk-proj-GMjkfWjiiHUEg0Dq6EYlT3BlbkFJEsgoJfP1HydmgZEQrjj0"
 
 Nutritionist = Agent(
     role='Nutritionist',
